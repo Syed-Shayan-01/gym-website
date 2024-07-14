@@ -100,14 +100,10 @@
     "ts-interface-checker": "^0.1.13",
     "update-browserslist-db": "^1.1.0",
     "util-deprecate": "^1.0.2",
-    "vite": "^5.3.3",
     "which": "^2.0.2",
     "wrap-ansi": "^8.1.0",
     "wrap-ansi-cjs": "^7.0.0",
     "yaml": "^2.4.5"
-  },
-  "scripts": {
-   "start": "vite"
   },
   "keywords": [],
   "author": "",

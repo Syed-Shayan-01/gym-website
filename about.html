@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="../style.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="../../index.js" defer></script>
+  <script src="/index.js" defer></script>
   <script src="https://kit.fontawesome.com/a8a65d2bf6.js" crossorigin="anonymous"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 </head>
@@ -36,11 +36,13 @@
           <ul class="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0">
             <li class="text-gray-600 md:mr-12 text-[1.3rem] py-1 hover:text-red-600"><a href="/about.html">About</a>
             </li>
-            <li class="text-gray-600 md:mr-12 text-[1.3rem] py-1 hover:text-red-600"><a href="#">Pricing</a></li>
-            <li class="text-gray-600 md:mr-12 text-[1.3rem] py-1 hover:text-red-600"><a href="#">Contact</a></li>
+            <li class="text-gray-600 md:mr-12 text-[1.3rem] py-1 hover:text-red-600"><a href="/price.html">Pricing</a>
+            </li>
+            <li class="text-gray-600 md:mr-12 text-[1.3rem] py-1 hover:text-red-600"><a href="/contact.html">Contact</a>
+            </li>
             <li class="text-gray-600 md:mr-12 text-[1.3rem] py-1 hover:text-red-600">
-              <button
-                class="rounded-md border-2 border-red-600 px-6 py-1 font-medium text-red-600 transition-colors hover:bg-red-600 hover:text-white">Login</button>
+              <button class="rounded-xl bg-red-600 px-5 py-2 text-center font-semibold text-white hover:bg-red-700"
+                type="submit">Login</button>
             </li>
           </ul>
         </nav>
@@ -60,7 +62,7 @@
               About Us
             </h1>
             <p
-              class="max-md:text-[1rem] max-sm:text-[0.9rem] max-md:w-72 max-sm:w-52 text-lg text-white text-primary-foreground">
+              class="max-md:text-[1rem] font-semibold max-sm:text-[0.9rem] max-md:w-72 max-sm:w-52 text-lg text-white text-primary-foreground">
               Join our state-of-the-art gym and experience the ultimate fitness journey.
             </p>
           </div>
@@ -115,20 +117,8 @@
           </div>
           <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <div class="rounded-lg bg-background p-6 shadow-sm">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="h-8 w-8 text-primary">
-                <path d="M14.4 14.4 9.6 9.6"></path>
-                <path
-                  d="M18.657 21.485a2 2 0 1 1-2.829-2.828l-1.767 1.768a2 2 0 1 1-2.829-2.829l6.364-6.364a2 2 0 1 1 2.829 2.829l-1.768 1.767a2 2 0 1 1 2.828 2.829z">
-                </path>
-                <path d="m21.5 21.5-1.4-1.4"></path>
-                <path d="M3.9 3.9 2.5 2.5"></path>
-                <path
-                  d="M6.404 12.768a2 2 0 1 1-2.829-2.829l1.768-1.767a2 2 0 1 1-2.828-2.829l2.828-2.828a2 2 0 1 1 2.829 2.828l1.767-1.768a2 2 0 1 1 2.829 2.829z">
-                </path>
-              </svg>
-              <h3 class="mt-4 text-xl font-bold">Weight Room</h3>
+              <span class="text-red-600 text-[1.7rem]"><i class="fa-solid fa-dumbbell"></i></span>
+              <h3 class="mt-4 text-xl font-bold text-red-800">Weight Room</h3>
               <p class="mt-2 text-muted-foreground">
                 Our spacious weight room is equipped with the latest strength training equipment, catering to all
                 fitness levels.
@@ -136,31 +126,14 @@
             </div>
             <div class="rounded-lg bg-background p-6 shadow-sm">
               <span class="text-red-600 text-[1.7rem]"><i class="ri-timer-flash-line"></i></span>
-              <h3 class="mt-4 text-xl font-bold">Cardio Studio</h3>
+              <h3 class="mt-4 text-xl font-bold text-red-800">Cardio Studio</h3>
               <p class="mt-2 text-muted-foreground">
                 Experience high-intensity cardio workouts on our state-of-the-art treadmills, ellipticals, and bikes.
               </p>
             </div>
             <div class="rounded-lg bg-background p-6 shadow-sm">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="h-8 w-8 text-primary">
-                <path d="M22 17v1c0 .5-.5 1-1 1H3c-.5 0-1-.5-1-1v-1"></path>
-              </svg>
-              <h3 class="mt-4 text-xl font-bold">Yoga Studio</h3>
-              <p class="mt-2 text-muted-foreground">
-                Unwind and find your inner peace in our dedicated yoga studio, featuring a calming atmosphere and
-                expert instruction.
-              </p>
-            </div>
-            <div class="rounded-lg bg-background p-6 shadow-sm">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="h-8 w-8 text-primary">
-                <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
-                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-              </svg>
-              <h3 class="mt-4 text-xl font-bold">Locker Rooms</h3>
+              <span class="text-red-600 text-[1.7rem]"><i class="fa-solid fa-lock"></i></span>
+              <h3 class="mt-4 text-xl font-bold text-red-800">Locker Rooms</h3>
               <p class="mt-2 text-muted-foreground">
                 Our modern, well-equipped locker rooms provide a comfortable space to get ready before and after your
                 workout.
@@ -169,11 +142,11 @@
             <div class="rounded-lg bg-background p-6 shadow-sm">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="h-8 w-8 text-primary">
+                class="h-8 w-8 text-red-600">
                 <circle cx="9" cy="9" r="7"></circle>
                 <circle cx="15" cy="15" r="7"></circle>
               </svg>
-              <h3 class="mt-4 text-xl font-bold">Smoothie Bar</h3>
+              <h3 class="mt-4 text-xl font-bold text-red-800">Smoothie Bar</h3>
               <p class="mt-2 text-muted-foreground">
                 Refuel and replenish with a wide selection of healthy smoothies and protein-packed snacks at our
                 on-site smoothie bar.
@@ -182,14 +155,14 @@
             <div class="rounded-lg bg-background p-6 shadow-sm">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="h-8 w-8 text-primary">
+                class="h-8 w-8 text-red-600">
                 <path d="M9 9a3 3 0 1 1 6 0"></path>
                 <path d="M12 12v3"></path>
                 <path d="M11 15h2"></path>
                 <path d="M19 9a7 7 0 1 0-13.6 2.3C6.4 14.4 8 19 8 19h8s1.6-4.6 2.6-7.7c.3-.8.4-1.5.4-2.3"></path>
                 <path d="M12 19v3"></path>
               </svg>
-              <h3 class="mt-4 text-xl font-bold">Ample Parking</h3>
+              <h3 class="mt-4 text-xl font-bold text-red-800">Ample Parking</h3>
               <p class="mt-2 text-muted-foreground">
                 Enjoy the convenience of our spacious parking lot, ensuring you can easily access our gym without
                 hassle.

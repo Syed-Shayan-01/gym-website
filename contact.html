@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fytness Gym - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/a8a65d2bf6.js" crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+</head>
+
+<body>
+
+    <body>
+        <div class="flex flex-col min-h-screen">
+            <header class="shadow">
+                <div
+                    class="relative flex justify-between max-w-screen-xl flex-col overflow-hidden px-4 py-4 md:mx-auto md:flex-row md:items-center">
+                    <a href="/" class="flex items-center whitespace-nowrap text-2xl font-black">
+                        <span class="mr-2 text-4xl text-red-600">
+                            <span class="text-[1.7rem] text-red-600"><i class="fa-solid fa-dumbbell"></i></span>
+                        </span>
+                        <span class="text-black text-[2rem]">Fitness Gym</span>
+                    </a>
+                    <input type="checkbox" class="peer hidden" id="navbar-open" />
+                    <label class="absolute top-6 right-7 cursor-pointer md:hidden" for="navbar-open">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <i class="ri-menu-line text-[1.4rem]" id="menu-icon"></i>
+                        <i class="ri-close-line text-[1.4rem] hidden" id="close-icon"></i>
+                    </label>
+                    <nav aria-label="Header Navigation"
+                        class="peer-checked:mt-8 peer-checked:max-h-56 flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all md:ml-24 md:max-h-full md:flex-row md:items-start">
+                        <ul class="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0">
+                            <li class="text-gray-600 md:mr-12 text-[1.3rem] py-1 hover:text-red-600"><a
+                                    href="/about.html">About</a>
+                            </li>
+                            <li class="text-gray-600 md:mr-12 text-[1.3rem] py-1 hover:text-red-600"><a
+                                    href="/price.html">Pricing</a></li>
+                            <li class="text-gray-600 md:mr-12 text-[1.3rem] py-1 hover:text-red-600">
+                                <a href="/contact.html">Contact</a>
+                            </li>
+                            <li class="text-gray-600 md:mr-12 text-[1.3rem] py-1 hover:text-red-600">
+                                <button
+                                    class="rounded-xl bg-red-600 px-5 py-2 text-center font-semibold text-white hover:bg-red-700"
+                                    type="submit">Login</button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <main class="flex-1">
+                <!-- Front Image Section -->
+                <section
+                    class=" relative w-full max-sm:h-[60vh] max-md:h-[70vh] md:h-[89vh] flex items-center justify-center">
+                    <img src="/public/image/body2.png" class="absolute inset-0 w-full h-full object-cover z-0">
+                    <div class="container z-10 px-4 md:px-6 space-y-6 md:space-y-10">
+                        <div class="max-w-2xl space-y-4">
+                            <h1
+                                class="text-4xl text-white font-bold tracking-tight text-primary-foreground max-md:w-72 max-sm:text-[2rem] md:text-6xl">
+                                Contact
+                            </h1>
+                            <p
+                                class="max-md:text-[1rem] font-semibold max-sm:text-[0.9rem] max-md:w-72 max-sm:w-52 text-lg text-white text-primary-foreground">
+                                If you have any question. So you can talk.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-------------------------- Contact Section ------------------------>
+                <div class="font-sans text-base text-red-900 sm:px-10">
+                    <div class="text-base text-red-900">
+                      <div class="mx-auto w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
+                        <div class="mx-2 pt-12 text-center md:mx-auto md:w-2/3 md:pb-12">
+                          <h1 class="mb-4 text-3xl font-black sm:text-5xl xl:text-6xl">Contact us</h1>
+                          <div class="text-lg sm:text-xl xl:text-xl">
+                            <div class="text-red-600 font-semibold">
+                              <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mx-auto mb-20 flex w-full max-w-screen-lg flex-col overflow-hidden rounded-xl text-gray-900 md:flex-row md:border md:shadow-lg">
+                      <form class="mx-auto w-full max-w-xl border-gray-200 px-10 py-8 md:px-8">
+                        <div class="mb-4"><label class="text mb-2 block font-medium" for="email">Your e-mail:</label><input class="w-full rounded border border-gray-300 px-3 py-2 outline-none ring-red-500 focus:ring" id="email" type="email" required="" /></div>
+                        <div class="mb-4"><label class="text mb-2 block font-medium" for="subject">Subject:</label><input class="w-full rounded border border-gray-300 px-3 py-2 outline-none ring-red-500 focus:ring" id="subject" type="subject" required="" /></div>
+                        <div class="mb-4"><label class="text mb-2 block font-medium" for="message">Message:</label><textarea class="h-52 w-full rounded border border-gray-300 px-3 py-2 outline-none ring-red-500 focus:ring" id="message" required=""></textarea></div>
+                        <div class="flex items-center">
+                          <div class="flex-1"></div>
+                          <button class="rounded-xl bg-red-600 px-4 py-3 text-center font-bold text-white hover:bg-red-700" type="submit">Send message</button>
+                        </div>
+                      </form>
+                      <div class="mt-10 bg-red-600 px-10 py-8 text-gray-100 md:mt-0 md:ml-auto">
+                        <div class="">
+                          <p class="mb-4 font-medium border-b  pb-2">OFFICE HOURS</p>
+                          <p class="mb-4">Monday – Thursday: 08:00 – 16:00</p>
+                          <p class="mb-4">Friday: 08:00 - 15:00</p>
+                          <p class="mb-4">Weekend: Closed</p>
+                          <p class="mb-4">
+                            Email:
+                            <a href="#" class="font-semibold underline">support@apps.io</a>
+                          </p>
+                          <p class="mb-4">
+                            Phone:
+                            <a href="#" class="font-semibold underline">+46 (0) 10-32 32 322</a>
+                          </p>
+                          <hr class="my-2 h-0 border-t border-r-0 border-b-0 border-l-0 border-gray-300" />
+                          <p class="mb-4">Org.no: 63452-2832</p>
+                          <p class="mb-4">VAT no: 32353</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+
+            </main>
+
+            <!-- Footer -->
+            <footer class="bg-gray-200 p-6 md:py-12 w-full">
+                <div
+                    class="container mx-auto max-sm:flex-col max-sm:space-y-3 flex md:flex-wrap justify-between space-y-6 md:space-y-0">
+                    <div class="w-full md:w-1/4 flex-1 grid gap-1">
+                        <h3 class="font-bold text-red-600 text-lg">Fitness Gym</h3>
+                        <p>123 Main Street</p>
+                        <p>Anytown, USA 12345</p>
+                        <p>Phone: (123) 456-7890</p>
+                    </div>
+                    <div class="w-full md:w-1/4 flex-1 grid gap-1">
+                        <h3 class="font-bold text-red-600 text-lg">Quick Links</h3>
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Classes</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="w-full md:w-1/4 flex-1 grid gap-1">
+                        <h3 class="font-bold text-red-600 text-lg">Classes</h3>
+                        <a href="#">Yoga</a>
+                        <a href="#">HIIT</a>
+                        <a href="#">Strength Training</a>
+                        <a href="#">Cardio</a>
+                    </div>
+                    <div class="w-full md:w-1/4 flex-1 grid gap-1">
+                        <h3 class="font-bold text-red-600 text-lg">Follow Us</h3>
+                        <div class="flex gap-2">
+                            <a class="hover:text-primary transition-colors" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="h-6 w-6">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a>
+                            <a class="hover:text-primary transition-colors" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="h-6 w-6">
+                                    <path
+                                        d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a class="hover:text-primary transition-colors" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="h-6 w-6">
+                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </body>
+</body>
+
+</html>
